@@ -23,6 +23,7 @@
 		BD4CA007760C4888A25285F6 /* SFProDisplay Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00F492E7432642AFB2011F91 /* SFProDisplay Bold.ttf */; };
 		D23AAAC1F2E64442A6318177 /* SFProDisplay Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E924D021453B422287E4A01B /* SFProDisplay Regular.ttf */; };
 		C197FC2277C84E8DB6962CB5 /* SFProDisplay Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F30F5DEA85B4018BAE051CC /* SFProDisplay Semibold.ttf */; };
+		8444F7D6E98940BEA6E84C9B /* SFProText Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B34B187F4E54428BB5C865B /* SFProText Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		00F492E7432642AFB2011F91 /* SFProDisplay Bold.ttf */ = {isa = PBXFileReference; name = "SFProDisplay Bold.ttf"; path = "../assets/fonts/SFProDisplay Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		E924D021453B422287E4A01B /* SFProDisplay Regular.ttf */ = {isa = PBXFileReference; name = "SFProDisplay Regular.ttf"; path = "../assets/fonts/SFProDisplay Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		5F30F5DEA85B4018BAE051CC /* SFProDisplay Semibold.ttf */ = {isa = PBXFileReference; name = "SFProDisplay Semibold.ttf"; path = "../assets/fonts/SFProDisplay Semibold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0B34B187F4E54428BB5C865B /* SFProText Bold.ttf */ = {isa = PBXFileReference; name = "SFProText Bold.ttf"; path = "../assets/fonts/SFProText Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 				00F492E7432642AFB2011F91 /* SFProDisplay Bold.ttf */,
 				E924D021453B422287E4A01B /* SFProDisplay Regular.ttf */,
 				5F30F5DEA85B4018BAE051CC /* SFProDisplay Semibold.ttf */,
+				0B34B187F4E54428BB5C865B /* SFProText Bold.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				BD4CA007760C4888A25285F6 /* SFProDisplay Bold.ttf in Resources */,
 				D23AAAC1F2E64442A6318177 /* SFProDisplay Regular.ttf in Resources */,
 				C197FC2277C84E8DB6962CB5 /* SFProDisplay Semibold.ttf in Resources */,
+				8444F7D6E98940BEA6E84C9B /* SFProText Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

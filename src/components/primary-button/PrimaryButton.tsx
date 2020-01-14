@@ -1,17 +1,19 @@
 import * as React from "react";
-import {StyleSheet, View, Text} from "react-native";
+import {StyleSheet, View, Text, ViewStyle, TextStyle, ImageStyle, Platform} from "react-native";
 import {colors} from "../../tokens/colors";
 import {commonButtonSmallStyle, commonButtonStyle, IButtonCommon} from "../common-button/CommonButton";
+import ToButton from "../../wrappers/button/ToButton";
 
 const styles = StyleSheet.create({
     ...commonButtonStyle,
     text: {
         ...commonButtonStyle.text,
-        color: colors.white,
+        color: colors.white
     },
     background: {
         ...commonButtonStyle.background,
-        backgroundImage: `linear-gradient(-180deg, ${colors.green400} 0%, ${colors.green500} 90%)`,
+        ...((Platform.OS !== "ios" && Platform.OS !== "android" ) ? {backgroundImage:  `linear-gradient(-180deg, ${colors.green400} 0%, ${colors.green500} 90%)`} : {}),
+        backgroundColor: colors.green400
     }
 } as any);
 
@@ -22,12 +24,18 @@ const focusStyles = StyleSheet.create({
     }
 });
 
-export interface IPrimaryButtonCommon extends IButtonCommon {}
+export interface IPrimaryButton extends IButtonCommon {
+    style?: ViewStyle | TextStyle | ImageStyle
+}
 
-export const PrimaryButton = (props: {isFocus?: boolean, isHover?: boolean,style?: any} & IPrimaryButtonCommon) => {
+const PrimaryButton = (props: IPrimaryButton) => {
     const {style, children, isHover, isFocus, isSmall} = props;
     return <View style={[styles.container, isSmall && commonButtonSmallStyle.container, style]}>
         <View style={[styles.background, isFocus && focusStyles.background]} />
         <Text style={[styles.text, isSmall && commonButtonSmallStyle.text]}>{children}</Text>
     </View>
 };
+
+export default (props: {onClick?: () => void} & IPrimaryButton) => <ToButton onClick={props.onClick}>
+    {({isHover, isFocus}) => <PrimaryButton {...props} isFocus={isFocus} isHover={isHover} />}
+</ToButton>

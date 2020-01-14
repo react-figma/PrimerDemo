@@ -13,7 +13,6 @@ export const commonButtonStyle = {
         fontFamily: "SF Pro Text",
         fontWeight: "bold",
         fontSize: typeScale.size5,
-        lineHeight: 1.42,
         textAlign: "center",
         zIndex: 1,
         marginLeft: 12 + borderSize,
@@ -27,7 +26,8 @@ export const commonButtonStyle = {
         width: "100%",
         height: "100%",
         borderWidth: 1,
-        borderColor: "rgba(27,31,35,0.2)"
+        borderColor: "rgba(27,31,35,0.2)",
+        zIndex: 0
     }
 };
 

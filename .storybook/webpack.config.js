@@ -13,7 +13,7 @@ module.exports = ({ config }) => {
         },
     ], exclude: /node_modules/ });
 
-    config.resolve.extensions.push('.ts', '.tsx');
+    config.resolve.extensions.push('.web.ts', '.web.tsx', '.ts', '.tsx');
     config.resolve.alias = {
         ...(config.resolve.alias || {}),
         'react-native$': 'react-native-web',

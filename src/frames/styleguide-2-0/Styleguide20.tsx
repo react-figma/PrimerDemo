@@ -2,7 +2,7 @@ import * as React from "react";
 import {StyleSheet, Frame, View, Text, Component} from "react-figma";
 import {StyleguideLabel} from "../../components/styleguide-label/StyleguideLabel";
 import {StyleguideSeparatorWrapper} from "../../components/styleguide-separator/StyleguideSeparatorWrapper";
-import {PrimaryButton} from "../../components/primary-button/PrimaryButton";
+import PrimaryButton from "../../components/primary-button/PrimaryButtonPrototype";
 import {DefaultButton} from "../../components/default-button/DefaultButton";
 import {DangerButton} from "../../components/danger-button/DangerButton";
 import {OutlineButton} from "../../components/outline-button/OutlineButton";

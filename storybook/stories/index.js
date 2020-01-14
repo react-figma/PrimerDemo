@@ -9,3 +9,4 @@ import Welcome from './Welcome';
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
 import "../../src/components/flash/index.stories"
+import "../../src/components/primary-button/index.stories"

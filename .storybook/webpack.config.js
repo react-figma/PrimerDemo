@@ -14,6 +14,10 @@ module.exports = ({ config }) => {
     ], exclude: /node_modules/ });
 
     config.resolve.extensions.push('.ts', '.tsx');
-    config.resolve.alias = {...(config.resolve.alias || {}), 'react-native$': 'react-native-web'};
+    config.resolve.alias = {
+        ...(config.resolve.alias || {}),
+        'react-native$': 'react-native-web',
+        '@storybook/react-native': '@storybook/react'
+    };
     return config;
 };

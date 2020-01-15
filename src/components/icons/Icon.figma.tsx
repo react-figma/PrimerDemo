@@ -1,6 +1,5 @@
 import * as React from "react";
-import {StyleSheet} from "react-native";
-import { SvgXml } from 'react-native-svg';
+import {Svg, StyleSheet} from "react-figma";
 
 const styles = StyleSheet.create({
     icon: {
@@ -11,6 +10,5 @@ const styles = StyleSheet.create({
 
 export const Icon = (props) => {
     const {src: source, style, ...otherProps} = props;
-
-    return <SvgXml xml={source} style={[styles.icon, StyleSheet.flatten(style)]} {...otherProps} />;
+    return <Svg source={source} style={[styles.icon, StyleSheet.flatten(style)]} {...otherProps} />
 };

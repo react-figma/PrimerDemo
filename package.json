@@ -6,7 +6,9 @@
     "storybook:web": "start-storybook",
     "storybook:ios": "react-native run-ios",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "figma:webpack:watch": "webpack --config figma.webpack.config.js --watch ",
+    "build": "build-storybook -o public"
   },
   "dependencies": {
     "@emotion/styled": "^10.0.27",
@@ -40,13 +42,20 @@
     "babel-jest": "^24.1.0",
     "babel-loader": "^8.0.6",
     "babel-plugin-inline-import": "^3.0.0",
+    "html-webpack-inline-source-plugin": "^0.0.10",
+    "html-webpack-plugin": "^3.2.0",
     "jest": "^24.1.0",
     "metro-react-native-babel-preset": "0.54.1",
     "react-docgen-typescript-loader": "^3.6.0",
     "react-dom": "16.8.6",
+    "react-figma-webpack-config": "0.0.4",
     "react-test-renderer": "16.8.6",
+    "svg-inline-loader": "^0.8.0",
     "ts-loader": "^6.2.1",
-    "typescript": "^3.6.3"
+    "typescript": "^3.6.3",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-merge": "^4.2.2"
   },
   "jest": {
     "preset": "react-native",

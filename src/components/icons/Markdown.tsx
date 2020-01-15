@@ -12,6 +12,6 @@ const styles = StyleSheet.create({
 
 export const Markdown = (props) => {
     const {style} = props;
-    return <Icon source={logoGist} style={[styles.icon, style]} />
+    return <Icon src={logoGist} style={[styles.icon, style]} />
 };
 

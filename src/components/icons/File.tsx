@@ -12,6 +12,6 @@ const styles = StyleSheet.create({
 
 export const File = (props) => {
     const {style} = props;
-    return <Icon source={icon} style={[styles.icon, style]} />
+    return <Icon src={icon} style={[styles.icon, style]} />
 };
 

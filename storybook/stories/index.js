@@ -10,3 +10,4 @@ storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo(
 
 import "../../src/components/flash/index.stories"
 import "../../src/components/buttons/index.stories"
+import "../../src/components/icons/index.stories"

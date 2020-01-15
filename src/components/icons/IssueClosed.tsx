@@ -4,6 +4,6 @@ import {Icon} from "./Icon";
 
 export const IssueClosed = (props) => {
     const {style} = props;
-    return <Icon source={icon} style={style} />
+    return <Icon src={icon} style={style} />
 };
 

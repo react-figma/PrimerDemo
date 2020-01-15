@@ -4,6 +4,6 @@ import {Icon} from "./Icon";
 
 export const Keyboard = (props) => {
     const {style} = props;
-    return <Icon source={icon} style={style} />
+    return <Icon src={icon} style={style} />
 };
 

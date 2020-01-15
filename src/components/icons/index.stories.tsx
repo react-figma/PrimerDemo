@@ -1,7 +1,6 @@
 import * as React from 'react';
-import {storiesOf} from "@storybook/react";
+import {storiesOf} from "@storybook/react-native";
 import {withKnobs} from "@storybook/addon-knobs";
-import { withInfo } from '@storybook/addon-info';
 import {GistLogo} from "./GistLogo";
 import {GitHubLogo} from "./GitHubLogo";
 import {GitHubMark} from "./GitHubMark";
@@ -62,7 +61,6 @@ import {defaultBackground} from "../storybook-decorators/DefaultBackground";
 
 
 storiesOf('Icons', module)
-    .addDecorator(withInfo)
     .addDecorator(withKnobs)
     .addDecorator(defaultBackground)
     .add('Gist Logo', () => <GistLogo/>)

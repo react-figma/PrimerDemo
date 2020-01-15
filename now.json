@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "primer-demo",
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "routes": [
+    { "src": "/(.+)", "dest": "public/$1" }
+  ]
+}

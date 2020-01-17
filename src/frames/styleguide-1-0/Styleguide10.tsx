@@ -8,6 +8,8 @@ import {styleguideTypography} from "../../components/styleguide-typography/style
 import {StyleguideFont} from "../../components/styleguide-font/StyleguideFont";
 import {TypographyContainer} from "../../components/styleguide-typography/TypographyContainer";
 import {typography} from "../../tokens/typography";
+import {spacingScale} from "../../tokens/spacingScale";
+import {StyleguideSpacer} from "../../components/styleguide-spacer/StyleguideSpacer";
 
 const styles = StyleSheet.create({
     frame: {
@@ -40,7 +42,14 @@ const styles = StyleSheet.create({
     },
     typographyContainer: {
         marginTop: 40
-    }
+    },
+    spacersContainer: {
+        flexDirection: "row",
+        marginTop: 35
+    },
+    spacerWrapper: {
+        marginRight: spacingScale.spacer4
+    },
 });
 
 export const Styleguide10 = (props) => {
@@ -62,13 +71,14 @@ export const Styleguide10 = (props) => {
             </View>
         </View>
         <View style={{marginTop: 77}}>
-            <StyleguideLabel text="Fonts" />
+            <StyleguideLabel text="Spacers" />
             <StyleguideSeparator style={styles.separator} />
-            <View style={styles.fontsContainer}>
-                <Text style={[styleguideTypography.label, {marginTop: "42"}]}>SF Pro Display</Text>
-                <StyleguideFont label="Regular" fontWeight="normal" style={styles.fontWrapper} />
-                <StyleguideFont label="Semibold" fontWeight="semibold" style={styles.fontWrapper} />
-                <StyleguideFont label="Bold" fontWeight="bold" style={styles.fontWrapper} />
+            <View style={styles.spacersContainer}>
+                {Object.keys(spacingScale).map((name) => <StyleguideSpacer
+                    name={name}
+                    size={spacingScale[name]}
+                    style={styles.spacerWrapper}
+                />)}
             </View>
         </View>
         <View style={{marginTop: 106}}>

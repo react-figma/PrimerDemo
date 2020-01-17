@@ -31,5 +31,6 @@ export const colors = {
     red600: "#cb2431",
     red900: "#86181d",
     pink: "#ea4aaa",
+    black: "#24292e",
     white: "#ffffff"
 };

@@ -49,15 +49,16 @@ export const Styleguide10 = (props) => {
             <StyleguideLabel text="Colors" />
             <StyleguideSeparator style={styles.separator} />
             <View style={styles.colorsContainer}>
-                <StyleguideColor color={colors.gray} style={styles.colorWrapper} />
-                <StyleguideColor color={colors.blue} style={styles.colorWrapper} />
-                <StyleguideColor color={colors.green} style={styles.colorWrapper} />
-                <StyleguideColor color={colors.purple} style={styles.colorWrapper} />
-                <StyleguideColor color={colors.yellow} style={styles.colorWrapper} />
-                <StyleguideColor color={colors.orange} style={styles.colorWrapper} />
-                <StyleguideColor color={colors.red} style={styles.colorWrapper} />
-                <StyleguideColor color={colors.pink} style={styles.colorWrapper} />
-                <StyleguideColor withBorder color={colors.white} style={styles.colorWrapper} />
+                <StyleguideColor name="gray" color={colors.gray} style={styles.colorWrapper} />
+                <StyleguideColor name="blue" color={colors.blue} style={styles.colorWrapper} />
+                <StyleguideColor name="green" color={colors.green} style={styles.colorWrapper} />
+                <StyleguideColor name="purple" color={colors.purple} style={styles.colorWrapper} />
+                <StyleguideColor name="yellow" color={colors.yellow} style={styles.colorWrapper} />
+                <StyleguideColor name="orange" color={colors.orange} style={styles.colorWrapper} />
+                <StyleguideColor name="red" color={colors.red} style={styles.colorWrapper} />
+                <StyleguideColor name="pink" color={colors.pink} style={styles.colorWrapper} />
+                <StyleguideColor name="black" color={colors.black} style={styles.colorWrapper} />
+                <StyleguideColor name="white" withBorder color={colors.white} style={styles.colorWrapper} />
             </View>
         </View>
         <View style={{marginTop: 77}}>

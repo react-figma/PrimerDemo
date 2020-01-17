@@ -16,9 +16,9 @@ const styles = StyleSheet.create({
 });
 
 export const StyleguideColor = (props) => {
-    const {color, withBorder} = props;
+    const {color, withBorder, name} = props;
     return <View name="Color container" style={[styles.container, props.style]}>
         <View style={[styles.rect, {backgroundColor: color}, withBorder && {borderColor: "#c8c8c8", borderWidth: 1}]} />
-        <Text style={[styleguideTypography.label, styles.text]}>{color}</Text>
+        <Text style={[styleguideTypography.label, styles.text]}>{name || color}</Text>
     </View>
 };

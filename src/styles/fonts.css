@@ -24,3 +24,9 @@
     url("../fonts/SFProDisplay-Bold.woff") format("woff"),
     url("../fonts/SFProDisplay-Bold.ttf") format("truetype");
 }
+
+@font-face {
+    font-family: 'SF Pro Text';
+    font-weight: bold;
+    src: url("../fonts/SFProText-Bold.ttf") format("truetype");
+}

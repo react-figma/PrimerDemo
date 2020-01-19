@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     background: {
         ...commonButtonStyle.background,
         ...((Platform.OS !== "ios" && Platform.OS !== "android" ) ? {backgroundImage:  `linear-gradient(-180deg, ${colors.green400} 0%, ${colors.green500} 90%)`} : {}),
-        backgroundColor: colors.green400
+        backgroundColor: colors.green500
     }
 } as any);
 

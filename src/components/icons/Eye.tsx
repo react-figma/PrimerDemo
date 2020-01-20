@@ -3,7 +3,6 @@ import icon from "./icons/eye.svg"
 import {Icon} from "./Icon";
 
 export const Eye = (props) => {
-    const {style} = props;
-    return <Icon src={icon} style={style} />
+    return <Icon src={icon} {...props} />
 };
 

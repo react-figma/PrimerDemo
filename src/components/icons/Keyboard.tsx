@@ -3,7 +3,6 @@ import icon from "./icons/keyboard.svg"
 import {Icon} from "./Icon";
 
 export const Keyboard = (props) => {
-    const {style} = props;
-    return <Icon src={icon} style={style} />
+    return <Icon src={icon} {...props} />
 };
 

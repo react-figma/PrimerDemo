@@ -1,17 +1,8 @@
 import * as React from "react";
 import icon from "./icons/diff.svg"
 import {Icon} from "./Icon";
-import {StyleSheet} from "react-native";
-
-const styles = StyleSheet.create({
-    icon: {
-        width: 13,
-        height: 16
-    }
-});
 
 export const Diff = (props) => {
-    const {style} = props;
-    return <Icon src={icon} style={[styles.icon, style]} />
+    return <Icon ratio={13.0/16} src={icon} {...props} />
 };
 

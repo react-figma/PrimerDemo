@@ -1,14 +1,7 @@
 import * as React from "react";
-import {Svg, StyleSheet} from "react-figma";
-
-const styles = StyleSheet.create({
-    icon: {
-        width: 16,
-        height: 16
-    }
-});
+import {Svg} from "react-figma";
 
 export const Icon = (props) => {
-    const {src: source, style, ...otherProps} = props;
-    return <Svg source={source} style={[styles.icon, StyleSheet.flatten(style)]} {...otherProps} />
+    const {src: source, height = 16, width, ratio = 1, ...otherProps} = props;
+    return <Svg source={source} height={height} width={width || Math.round(height * ratio)} {...otherProps} />
 };

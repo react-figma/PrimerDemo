@@ -1,14 +1,7 @@
 import * as React from "react";
-import {Image, StyleSheet} from "react-native";
-
-const styles = StyleSheet.create({
-    icon: {
-        width: 16,
-        height: 16
-    }
-});
+import {Image} from "react-native";
 
 export const Icon = (props) => {
-    const {src: source, style, ...otherProps} = props;
-    return <Image source={source} style={[styles.icon, StyleSheet.flatten(style)]} {...otherProps} />
+    const {src: source, height = 16, width, ratio = 1, ...otherProps} = props;
+    return <Image source={source} style={{height, width: width || ratio * height}} {...otherProps} />
 };

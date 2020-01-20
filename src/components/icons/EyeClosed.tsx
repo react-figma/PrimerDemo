@@ -1,17 +1,8 @@
 import * as React from "react";
 import icon from "./icons/eye-closed.svg"
 import {Icon} from "./Icon";
-import {StyleSheet} from "react-native";
-
-const styles = StyleSheet.create({
-    icon: {
-        width: 16,
-        height: 14
-    }
-});
 
 export const EyeClosed = (props) => {
-    const {style} = props;
-    return <Icon src={icon} style={[styles.icon, style]} />
+    return <Icon ratio={16.0/14} src={icon} {...props} />
 };
 

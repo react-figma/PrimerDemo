@@ -1,17 +1,8 @@
 import * as React from "react";
 import icon from "./icons/request-changes.svg"
 import {Icon} from "./Icon";
-import {StyleSheet} from "react-native";
-
-const styles = StyleSheet.create({
-    icon: {
-        width: 16,
-        height: 15
-    }
-});
 
 export const RequestChanges = (props) => {
-    const {style} = props;
-    return <Icon src={icon} style={[styles.icon, style]} />
+    return <Icon ratio={16.0/15} src={icon} {...props} />
 };
 

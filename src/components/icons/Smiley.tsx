@@ -3,7 +3,6 @@ import icon from "./icons/smiley.svg"
 import {Icon} from "./Icon";
 
 export const Smiley = (props) => {
-    const {style} = props;
-    return <Icon src={icon} style={style} />
+    return <Icon src={icon} {...props} />
 };
 

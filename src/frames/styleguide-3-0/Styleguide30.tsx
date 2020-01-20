@@ -68,6 +68,9 @@ import {RepoTemplate} from "../../components/icons/RepoTemplate";
 import {RepoTemplatePrivate} from "../../components/icons/RepoTemplatePrivate";
 import {Workflow} from "../../components/icons/Workflow";
 import {WorkflowAll} from "../../components/icons/WorkflowAll";
+import {spacingScale} from "../../tokens/spacingScale";
+
+const {spacer3, spacer5} = spacingScale;
 
 const styles = StyleSheet.create({
     frame: {
@@ -83,39 +86,67 @@ const styles = StyleSheet.create({
         maxWidth: 660,
         flexWrap: "wrap"
     },
-    iconComponent: {
-        marginBottom: 20,
-        marginRight: 20,
-        minWidth: 16,
-        maxHeight: 16,
+    iconComponent5: {
+        marginBottom: spacer5,
+        marginRight: spacer5,
+        minWidth: spacer5,
+        maxHeight: spacer5,
+        justifyContent: "center"
+    },
+    iconComponent3: {
+        marginBottom: spacer3,
+        marginRight: spacer3,
+        minWidth: spacer3,
+        maxHeight: spacer3,
         justifyContent: "center"
     }
 });
 
 export const Styleguide30 = (props) => {
+
     return <Frame name="Styleguide 3-0" style={[styles.frame, props.style]}>
         <View style={{marginTop: 69}}>
             <StyleguideSeparatorWrapper>
                 <StyleguideLabel text="Logos" />
             </StyleguideSeparatorWrapper>
             <View style={styles.iconsLine}>
-                <Component name="logo-gist" style={styles.iconComponent}>
-                    <GistLogo />
+                <Component name="logo-gist-5" style={styles.iconComponent5}>
+                    <GistLogo height={spacer5} />
                 </Component>
-                <Component name="logo-github" style={styles.iconComponent}>
-                    <GitHubLogo />
+                <Component name="logo-github-5" style={styles.iconComponent5}>
+                    <GitHubLogo height={spacer5} />
                 </Component>
-                <Component name="logo-github-mark" style={styles.iconComponent}>
-                    <GitHubMark />
+                <Component name="logo-github-mark-5" style={styles.iconComponent5}>
+                    <GitHubMark height={spacer5} />
                 </Component>
-                <Component name="logo-markdown" style={styles.iconComponent}>
-                    <Markdown />
+                <Component name="logo-markdown-5" style={styles.iconComponent5}>
+                    <Markdown height={spacer5} />
                 </Component>
-                <Component name="logo-octoface" style={styles.iconComponent}>
-                    <Octoface />
+                <Component name="logo-octoface-5" style={styles.iconComponent5}>
+                    <Octoface height={spacer5} />
                 </Component>
-                <Component name="logo-paintcan" style={styles.iconComponent}>
-                    <Paintcan />
+                <Component name="logo-paintcan-5" style={styles.iconComponent5}>
+                    <Paintcan height={spacer5} />
+                </Component>
+            </View>
+            <View style={styles.iconsLine}>
+                <Component name="logo-gist-3" style={styles.iconComponent3}>
+                    <GistLogo height={spacer3} />
+                </Component>
+                <Component name="logo-github-3" style={styles.iconComponent3}>
+                    <GitHubLogo height={spacer3} />
+                </Component>
+                <Component name="logo-github-mark-3" style={styles.iconComponent3}>
+                    <GitHubMark height={spacer3} />
+                </Component>
+                <Component name="logo-markdown-3" style={styles.iconComponent3}>
+                    <Markdown height={spacer3} />
+                </Component>
+                <Component name="logo-octoface-3" style={styles.iconComponent3}>
+                    <Octoface height={spacer3} />
+                </Component>
+                <Component name="logo-paintcan-3" style={styles.iconComponent3}>
+                    <Paintcan height={spacer3} />
                 </Component>
             </View>
             <View style={{marginTop: 80}}>
@@ -124,35 +155,67 @@ export const Styleguide30 = (props) => {
                 </StyleguideSeparatorWrapper>
             </View>
             <View style={styles.iconsLine}>
-                <Component name="icon-thumbsdown" style={styles.iconComponent}>
-                    <Thumbsdown />
+                <Component name="icon-thumbsdown-5" style={styles.iconComponent5}>
+                    <Thumbsdown height={spacer5} />
                 </Component>
-                <Component name="icon-smiley" style={styles.iconComponent}>
-                    <Smiley />
+                <Component name="icon-smiley-5" style={styles.iconComponent5}>
+                    <Smiley height={spacer5} />
                 </Component>
-                <Component name="icon-gist-secret" style={styles.iconComponent}>
-                    <GistSecret />
+                <Component name="icon-gist-secret-5" style={styles.iconComponent5}>
+                    <GistSecret height={spacer5} />
                 </Component>
-                <Component name="icon-thumbsup" style={styles.iconComponent}>
-                    <Thumbsup />
+                <Component name="icon-thumbsup-5" style={styles.iconComponent5}>
+                    <Thumbsup height={spacer5} />
                 </Component>
-                <Component name="icon-hubot" style={styles.iconComponent}>
-                    <Hubot />
+                <Component name="icon-hubot-5" style={styles.iconComponent5}>
+                    <Hubot height={spacer5} />
                 </Component>
-                <Component name="icon-organization" style={styles.iconComponent}>
-                    <Organization />
+                <Component name="icon-organization-5" style={styles.iconComponent5}>
+                    <Organization height={spacer5} />
                 </Component>
-                <Component name="icon-person" style={styles.iconComponent}>
-                    <Person />
+                <Component name="icon-person-5" style={styles.iconComponent5}>
+                    <Person height={spacer5} />
                 </Component>
-                <Component name="icon-eye" style={styles.iconComponent}>
-                    <Eye  />
+                <Component name="icon-eye-5" style={styles.iconComponent5}>
+                    <Eye height={spacer5} />
                 </Component>
-                <Component name="icon-eye-closed" style={styles.iconComponent}>
-                    <EyeClosed />
+                <Component name="icon-eye-closed-5" style={styles.iconComponent5}>
+                    <EyeClosed height={spacer5} />
                 </Component>
-                <Component name="icon-jersey" style={styles.iconComponent}>
-                    <Jersey />
+                <Component name="icon-jersey-5" style={styles.iconComponent5}>
+                    <Jersey height={spacer5} />
+                </Component>
+            </View>
+            <View style={styles.iconsLine}>
+                <Component name="icon-thumbsdown-3" style={styles.iconComponent3}>
+                    <Thumbsdown height={spacer3} />
+                </Component>
+                <Component name="icon-smiley-3" style={styles.iconComponent3}>
+                    <Smiley height={spacer3} />
+                </Component>
+                <Component name="icon-gist-secret-3" style={styles.iconComponent3}>
+                    <GistSecret height={spacer3} />
+                </Component>
+                <Component name="icon-thumbsup-3" style={styles.iconComponent3}>
+                    <Thumbsup height={spacer3} />
+                </Component>
+                <Component name="icon-hubot-3" style={styles.iconComponent3}>
+                    <Hubot height={spacer3} />
+                </Component>
+                <Component name="icon-organization-3" style={styles.iconComponent3}>
+                    <Organization height={spacer3} />
+                </Component>
+                <Component name="icon-person-3" style={styles.iconComponent3}>
+                    <Person height={spacer3} />
+                </Component>
+                <Component name="icon-eye-3" style={styles.iconComponent3}>
+                    <Eye height={spacer3} />
+                </Component>
+                <Component name="icon-eye-closed-3" style={styles.iconComponent3}>
+                    <EyeClosed height={spacer3} />
+                </Component>
+                <Component name="icon-jersey-3" style={styles.iconComponent3}>
+                    <Jersey height={spacer3} />
                 </Component>
             </View>
             <View style={{marginTop: 80}}>
@@ -161,155 +224,307 @@ export const Styleguide30 = (props) => {
                 </StyleguideSeparatorWrapper>
             </View>
             <View style={styles.iconsLine}>
-                <Component name="icon-code" style={styles.iconComponent}>
-                    <Code />
+                <Component name="icon-code-5" style={styles.iconComponent5}>
+                    <Code height={spacer5} />
                 </Component>
-                <Component name="icon-diff-added" style={styles.iconComponent}>
-                    <DiffAdded  />
+                <Component name="icon-diff-added-5" style={styles.iconComponent5}>
+                    <DiffAdded height={spacer5} />
                 </Component>
-                <Component name="icon-diff-ignored" style={styles.iconComponent}>
-                    <DiffIgnored  />
+                <Component name="icon-diff-ignored-5" style={styles.iconComponent5}>
+                    <DiffIgnored height={spacer5} />
                 </Component>
-                <Component name="icon-gist" style={styles.iconComponent}>
-                    <Gist />
+                <Component name="icon-gist-5" style={styles.iconComponent5}>
+                    <Gist height={spacer5} />
                 </Component>
-                <Component name="icon-diff-modified" style={styles.iconComponent}>
-                    <DiffModified />
+                <Component name="icon-diff-modified-5" style={styles.iconComponent5}>
+                    <DiffModified height={spacer5} />
                 </Component>
-                <Component name="icon-diff-removed" style={styles.iconComponent}>
-                    <DiffRemoved />
+                <Component name="icon-diff-removed-5" style={styles.iconComponent5}>
+                    <DiffRemoved height={spacer5} />
                 </Component>
-                <Component name="icon-git-commit" style={styles.iconComponent}>
-                    <GitCommit />
+                <Component name="icon-git-commit-5" style={styles.iconComponent5}>
+                    <GitCommit height={spacer5} />
                 </Component>
-                <Component name="icon-diff-renamed" style={styles.iconComponent}>
-                    <DiffRenamed />
+                <Component name="icon-diff-renamed-5" style={styles.iconComponent5}>
+                    <DiffRenamed height={spacer5} />
                 </Component>
-                <Component name="icon-git-compare" style={styles.iconComponent}>
-                    <GitCompare />
+                <Component name="icon-git-compare-5" style={styles.iconComponent5}>
+                    <GitCompare height={spacer5} />
                 </Component>
-                <Component name="icon-diff" style={styles.iconComponent}>
-                    <Diff />
+                <Component name="icon-diff-5" style={styles.iconComponent5}>
+                    <Diff height={spacer5} />
                 </Component>
-                <Component name="icon-git-branch" style={styles.iconComponent}>
-                    <GitBranch />
+                <Component name="icon-git-branch-5" style={styles.iconComponent5}>
+                    <GitBranch height={spacer5} />
                 </Component>
-                <Component name="icon-git-merge" style={styles.iconComponent}>
-                    <GitMerge />
+                <Component name="icon-git-merge-5" style={styles.iconComponent5}>
+                    <GitMerge height={spacer5} />
                 </Component>
-                <Component name="icon-database" style={styles.iconComponent}>
-                    <Database />
+                <Component name="icon-database-5" style={styles.iconComponent5}>
+                    <Database height={spacer5} />
                 </Component>
-                <Component name="icon-git-pull-request" style={styles.iconComponent}>
-                    <GitPullRequest />
+                <Component name="icon-git-pull-request-5" style={styles.iconComponent5}>
+                    <GitPullRequest height={spacer5} />
                 </Component>
-                <Component name="icon-issue-closed" style={styles.iconComponent}>
-                    <IssueClosed />
+                <Component name="icon-issue-closed-5" style={styles.iconComponent5}>
+                    <IssueClosed height={spacer5} />
                 </Component>
-                <Component name="icon-issue-opened" style={styles.iconComponent}>
-                    <IssueOpened />
+                <Component name="icon-issue-opened-5" style={styles.iconComponent5}>
+                    <IssueOpened height={spacer5} />
                 </Component>
-                <Component name="icon-issue-reopened" style={styles.iconComponent}>
-                    <IssueReopened />
+                <Component name="icon-issue-reopened-5" style={styles.iconComponent5}>
+                    <IssueReopened height={spacer5} />
                 </Component>
-                <Component name="icon-circuit-board" style={styles.iconComponent}>
-                    <CircuitBoard />
+                <Component name="icon-circuit-board-5" style={styles.iconComponent5}>
+                    <CircuitBoard height={spacer5} />
                 </Component>
-                <Component name="icon-no-new-line" style={styles.iconComponent}>
-                    <NoNewLine />
+                <Component name="icon-no-new-line-5" style={styles.iconComponent5}>
+                    <NoNewLine height={spacer5} />
                 </Component>
-                <Component name="icon-broadcast" style={styles.iconComponent}>
-                    <Broadcast />
+                <Component name="icon-broadcast-5" style={styles.iconComponent5}>
+                    <Broadcast height={spacer5} />
                 </Component>
-                <Component name="icon-keyboard" style={styles.iconComponent}>
-                    <Keyboard />
+                <Component name="icon-keyboard-5" style={styles.iconComponent5}>
+                    <Keyboard height={spacer5} />
                 </Component>
-                <Component name="icon-file-zip" style={styles.iconComponent}>
-                    <FileZip />
+                <Component name="icon-file-zip-5" style={styles.iconComponent5}>
+                    <FileZip height={spacer5} />
                 </Component>
-                <Component name="icon-file-binary" style={styles.iconComponent}>
-                    <FileBinary />
+                <Component name="icon-file-binary-5" style={styles.iconComponent5}>
+                    <FileBinary height={spacer5} />
                 </Component>
-                <Component name="icon-file-copy" style={styles.iconComponent}>
-                    <FileCode />
+                <Component name="icon-file-copy-5" style={styles.iconComponent5}>
+                    <FileCode height={spacer5} />
                 </Component>
-                <Component name="icon-file-directory" style={styles.iconComponent}>
-                    <FileDirectory />
+                <Component name="icon-file-directory-5" style={styles.iconComponent5}>
+                    <FileDirectory height={spacer5} />
                 </Component>
-                <Component name="icon-file-media" style={styles.iconComponent}>
-                    <FileMedia />
+                <Component name="icon-file-media-5" style={styles.iconComponent5}>
+                    <FileMedia height={spacer5} />
                 </Component>
-                <Component name="icon-file-pdf" style={styles.iconComponent}>
-                    <FilePdf />
+                <Component name="icon-file-pdf-5" style={styles.iconComponent5}>
+                    <FilePdf height={spacer5} />
                 </Component>
-                <Component name="icon-file-submodule" style={styles.iconComponent}>
-                    <FileSubmodule />
+                <Component name="icon-file-submodule-5" style={styles.iconComponent5}>
+                    <FileSubmodule height={spacer5} />
                 </Component>
-                <Component name="icon-file-symlink-directory" style={styles.iconComponent}>
-                    <FileSymlinkDirectory />
+                <Component name="icon-file-symlink-directory-5" style={styles.iconComponent5}>
+                    <FileSymlinkDirectory height={spacer5} />
                 </Component>
-                <Component name="icon-file-symlink-file" style={styles.iconComponent}>
-                    <FileSymlinkFile />
+                <Component name="icon-file-symlink-file-5" style={styles.iconComponent5}>
+                    <FileSymlinkFile height={spacer5} />
                 </Component>
-                <Component name="icon-browser" style={styles.iconComponent}>
-                    <Browser />
+                <Component name="icon-browser-5" style={styles.iconComponent5}>
+                    <Browser height={spacer5} />
                 </Component>
-                <Component name="icon-file" style={styles.iconComponent}>
-                    <File />
+                <Component name="icon-file-5" style={styles.iconComponent5}>
+                    <File height={spacer5} />
                 </Component>
-                <Component name="icon-repo-clone" style={styles.iconComponent}>
-                    <RepoClone />
+                <Component name="icon-repo-clone-5" style={styles.iconComponent5}>
+                    <RepoClone height={spacer5} />
                 </Component>
-                <Component name="icon-repo-force-push" style={styles.iconComponent}>
-                    <RepoForcePush />
+                <Component name="icon-repo-force-push-5" style={styles.iconComponent5}>
+                    <RepoForcePush height={spacer5} />
                 </Component>
-                <Component name="icon-repo-forked" style={styles.iconComponent}>
-                    <RepoForked />
+                <Component name="icon-repo-forked-5" style={styles.iconComponent5}>
+                    <RepoForked height={spacer5} />
                 </Component>
-                <Component name="icon-repo-pull" style={styles.iconComponent}>
-                    <RepoPull />
+                <Component name="icon-repo-pull-5" style={styles.iconComponent5}>
+                    <RepoPull height={spacer5} />
                 </Component>
-                <Component name="icon-repo-push" style={styles.iconComponent}>
-                    <RepoPush />
+                <Component name="icon-repo-push-5" style={styles.iconComponent5}>
+                    <RepoPush height={spacer5} />
                 </Component>
-                <Component name="icon-repo" style={styles.iconComponent}>
-                    <Repo />
+                <Component name="icon-repo-5" style={styles.iconComponent5}>
+                    <Repo height={spacer5} />
                 </Component>
-                <Component name="icon-ruby" style={styles.iconComponent}>
-                    <Ruby />
+                <Component name="icon-ruby-5" style={styles.iconComponent5}>
+                    <Ruby height={spacer5} />
                 </Component>
-                <Component name="icon-mirror" style={styles.iconComponent}>
-                    <Mirror />
+                <Component name="icon-mirror-5" style={styles.iconComponent5}>
+                    <Mirror height={spacer5} />
                 </Component>
-                <Component name="icon-server" style={styles.iconComponent}>
-                    <Server />
+                <Component name="icon-server-5" style={styles.iconComponent5}>
+                    <Server height={spacer5} />
                 </Component>
-                <Component name="icon-terminal" style={styles.iconComponent}>
-                    <Terminal />
+                <Component name="icon-terminal-5" style={styles.iconComponent5}>
+                    <Terminal height={spacer5} />
                 </Component>
-                <Component name="icon-radio-tower" style={styles.iconComponent}>
-                    <RadioTower />
+                <Component name="icon-radio-tower-5" style={styles.iconComponent5}>
+                    <RadioTower height={spacer5} />
                 </Component>
-                <Component name="icon-rss" style={styles.iconComponent}>
-                    <Rss />
+                <Component name="icon-rss-5" style={styles.iconComponent5}>
+                    <Rss height={spacer5} />
                 </Component>
-                <Component name="icon-versions" style={styles.iconComponent}>
-                    <Versions />
+                <Component name="icon-versions-5" style={styles.iconComponent5}>
+                    <Versions height={spacer5} />
                 </Component>
-                <Component name="icon-dependent" style={styles.iconComponent}>
-                    <Dependent />
+                <Component name="icon-dependent-5" style={styles.iconComponent5}>
+                    <Dependent height={spacer5} />
                 </Component>
-                <Component name="icon-repo-template" style={styles.iconComponent}>
-                    <RepoTemplate />
+                <Component name="icon-repo-template-5" style={styles.iconComponent5}>
+                    <RepoTemplate height={spacer5} />
                 </Component>
-                <Component name="icon-repo-template-private" style={styles.iconComponent}>
-                    <RepoTemplatePrivate />
+                <Component name="icon-repo-template-private-5" style={styles.iconComponent5}>
+                    <RepoTemplatePrivate height={spacer5} />
                 </Component>
-                <Component name="icon-workflow" style={styles.iconComponent}>
-                    <Workflow />
+                <Component name="icon-workflow-5" style={styles.iconComponent5}>
+                    <Workflow height={spacer5} />
                 </Component>
-                <Component name="workflow-all" style={styles.iconComponent}>
-                    <WorkflowAll />
+                <Component name="workflow-all-5" style={styles.iconComponent5}>
+                    <WorkflowAll height={spacer5} />
+                </Component>
+            </View>
+            <View style={styles.iconsLine}>
+                <Component name="icon-code-3" style={styles.iconComponent3}>
+                    <Code height={spacer3} />
+                </Component>
+                <Component name="icon-diff-added-3" style={styles.iconComponent3}>
+                    <DiffAdded height={spacer3} />
+                </Component>
+                <Component name="icon-diff-ignored-3" style={styles.iconComponent3}>
+                    <DiffIgnored height={spacer3} />
+                </Component>
+                <Component name="icon-gist-3" style={styles.iconComponent3}>
+                    <Gist height={spacer3} />
+                </Component>
+                <Component name="icon-diff-modified-3" style={styles.iconComponent3}>
+                    <DiffModified height={spacer3} />
+                </Component>
+                <Component name="icon-diff-removed-3" style={styles.iconComponent3}>
+                    <DiffRemoved height={spacer3} />
+                </Component>
+                <Component name="icon-git-commit-3" style={styles.iconComponent3}>
+                    <GitCommit height={spacer3} />
+                </Component>
+                <Component name="icon-diff-renamed-3" style={styles.iconComponent3}>
+                    <DiffRenamed height={spacer3} />
+                </Component>
+                <Component name="icon-git-compare-3" style={styles.iconComponent3}>
+                    <GitCompare height={spacer3} />
+                </Component>
+                <Component name="icon-diff-3" style={styles.iconComponent3}>
+                    <Diff height={spacer3} />
+                </Component>
+                <Component name="icon-git-branch-3" style={styles.iconComponent3}>
+                    <GitBranch height={spacer3} />
+                </Component>
+                <Component name="icon-git-merge-3" style={styles.iconComponent3}>
+                    <GitMerge height={spacer3} />
+                </Component>
+                <Component name="icon-database-3" style={styles.iconComponent3}>
+                    <Database height={spacer3} />
+                </Component>
+                <Component name="icon-git-pull-request-3" style={styles.iconComponent3}>
+                    <GitPullRequest height={spacer3} />
+                </Component>
+                <Component name="icon-issue-closed-3" style={styles.iconComponent3}>
+                    <IssueClosed height={spacer3} />
+                </Component>
+                <Component name="icon-issue-opened-3" style={styles.iconComponent3}>
+                    <IssueOpened height={spacer3} />
+                </Component>
+                <Component name="icon-issue-reopened-3" style={styles.iconComponent3}>
+                    <IssueReopened height={spacer3} />
+                </Component>
+                <Component name="icon-circuit-board-3" style={styles.iconComponent3}>
+                    <CircuitBoard height={spacer3} />
+                </Component>
+                <Component name="icon-no-new-line-3" style={styles.iconComponent3}>
+                    <NoNewLine height={spacer3} />
+                </Component>
+                <Component name="icon-broadcast-3" style={styles.iconComponent3}>
+                    <Broadcast height={spacer3} />
+                </Component>
+                <Component name="icon-keyboard-3" style={styles.iconComponent3}>
+                    <Keyboard height={spacer3} />
+                </Component>
+                <Component name="icon-file-zip-3" style={styles.iconComponent3}>
+                    <FileZip height={spacer3} />
+                </Component>
+                <Component name="icon-file-binary-3" style={styles.iconComponent3}>
+                    <FileBinary height={spacer3} />
+                </Component>
+                <Component name="icon-file-copy-3" style={styles.iconComponent3}>
+                    <FileCode height={spacer3} />
+                </Component>
+                <Component name="icon-file-directory-3" style={styles.iconComponent3}>
+                    <FileDirectory height={spacer3} />
+                </Component>
+                <Component name="icon-file-media-3" style={styles.iconComponent3}>
+                    <FileMedia height={spacer3} />
+                </Component>
+                <Component name="icon-file-pdf-3" style={styles.iconComponent3}>
+                    <FilePdf height={spacer3} />
+                </Component>
+                <Component name="icon-file-submodule-3" style={styles.iconComponent3}>
+                    <FileSubmodule height={spacer3} />
+                </Component>
+                <Component name="icon-file-symlink-directory-3" style={styles.iconComponent3}>
+                    <FileSymlinkDirectory height={spacer3} />
+                </Component>
+                <Component name="icon-file-symlink-file-3" style={styles.iconComponent3}>
+                    <FileSymlinkFile height={spacer3} />
+                </Component>
+                <Component name="icon-browser-3" style={styles.iconComponent3}>
+                    <Browser height={spacer3} />
+                </Component>
+                <Component name="icon-file-3" style={styles.iconComponent3}>
+                    <File height={spacer3} />
+                </Component>
+                <Component name="icon-repo-clone-3" style={styles.iconComponent3}>
+                    <RepoClone height={spacer3} />
+                </Component>
+                <Component name="icon-repo-force-push-3" style={styles.iconComponent3}>
+                    <RepoForcePush height={spacer3} />
+                </Component>
+                <Component name="icon-repo-forked-3" style={styles.iconComponent3}>
+                    <RepoForked height={spacer3} />
+                </Component>
+                <Component name="icon-repo-pull-3" style={styles.iconComponent3}>
+                    <RepoPull height={spacer3} />
+                </Component>
+                <Component name="icon-repo-push-3" style={styles.iconComponent3}>
+                    <RepoPush height={spacer3} />
+                </Component>
+                <Component name="icon-repo-3" style={styles.iconComponent3}>
+                    <Repo height={spacer3} />
+                </Component>
+                <Component name="icon-ruby-3" style={styles.iconComponent3}>
+                    <Ruby height={spacer3} />
+                </Component>
+                <Component name="icon-mirror-3" style={styles.iconComponent3}>
+                    <Mirror height={spacer3} />
+                </Component>
+                <Component name="icon-server-3" style={styles.iconComponent3}>
+                    <Server height={spacer3} />
+                </Component>
+                <Component name="icon-terminal-3" style={styles.iconComponent3}>
+                    <Terminal height={spacer3} />
+                </Component>
+                <Component name="icon-radio-tower-3" style={styles.iconComponent3}>
+                    <RadioTower height={spacer3} />
+                </Component>
+                <Component name="icon-rss-3" style={styles.iconComponent3}>
+                    <Rss height={spacer3} />
+                </Component>
+                <Component name="icon-versions-3" style={styles.iconComponent3}>
+                    <Versions height={spacer3} />
+                </Component>
+                <Component name="icon-dependent-3" style={styles.iconComponent3}>
+                    <Dependent height={spacer3} />
+                </Component>
+                <Component name="icon-repo-template-3" style={styles.iconComponent3}>
+                    <RepoTemplate height={spacer3} />
+                </Component>
+                <Component name="icon-repo-template-private-3" style={styles.iconComponent3}>
+                    <RepoTemplatePrivate height={spacer3} />
+                </Component>
+                <Component name="icon-workflow-3" style={styles.iconComponent3}>
+                    <Workflow height={spacer3} />
+                </Component>
+                <Component name="workflow-all-3" style={styles.iconComponent3}>
+                    <WorkflowAll height={spacer3} />
                 </Component>
             </View>
         </View>

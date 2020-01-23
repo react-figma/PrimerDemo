@@ -48,7 +48,7 @@ A multiplatform React-based design system inspired by GitHub [Primer](https://pr
 
 ```
 ├── .storybook - @storybook/react configuration
-├── .storybook-native - @storybook/react configuration
+├── .storybook-native - @storybook/react-native configuration
 ├── android - gradle project for React Native app
 ├── assets - React Native app assets
 ├── ios - iOS project for React Native app

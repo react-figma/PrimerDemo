@@ -2,6 +2,32 @@
 
 A multiplatform React-based design system inspired by GitHub [Primer](https://primer.style/).
 
+## Demo
+
+#### Web
+
+[Website](https://primerdemo.now.sh/)
+
+<details><summary>Demo GIF</summary>
+<p>
+
+![](https://media.giphy.com/media/Q8Ugil3y01nvhQrtIV/giphy.gif)
+
+</p>
+</details>
+
+#### Figma
+
+[Demo Figma document](https://www.figma.com/file/WCoBWoLG9UQSb9bC9ZLhRl/Untitled?node-id=0%3A1)
+
+<details><summary>Demo GIF</summary>
+<p>
+
+![](https://media.giphy.com/media/f9GcgN8tBdvnIPAZYB/giphy.gif)
+
+</p>
+</details>
+
 ## Running
 
 * Web (Storybook React): `yarn storybook:web`

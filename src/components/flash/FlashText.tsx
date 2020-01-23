@@ -29,13 +29,13 @@ const successStyles = StyleSheet.create({
 
 
 export const FlashText = (props) => {
-    const {children, style, isWarn, isError, isSuccess} = props;
+    const {children, style, type} = props;
     return <Text style={[
         typography.Paragraph5,
         styles.text,
-        isWarn && warnStyles.text,
-        isError && errorStyles.text,
-        isSuccess && successStyles.text,
+        type === "warn" && warnStyles.text,
+        type === "error"  && errorStyles.text,
+        type === "success" && successStyles.text,
         StyleSheet.flatten(style)
     ]}>{children}</Text>
 };

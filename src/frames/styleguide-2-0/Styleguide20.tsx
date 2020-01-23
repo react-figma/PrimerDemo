@@ -6,7 +6,7 @@ import PrimaryButton from "../../components/primary-button/PrimaryButton";
 import DefaultButton from "../../components/default-button/DefaultButton";
 import DangerButton from "../../components/danger-button/DangerButton";
 import OutlineButton from "../../components/outline-button/OutlineButton";
-import {Flash} from "../../components/flash/Flash";
+import Flash, {Flash as FlashContainer} from "../../components/flash/Flash";
 import {FlashText} from "../../components/flash/FlashText";
 
 const styles = StyleSheet.create({
@@ -94,36 +94,36 @@ export const Styleguide20 = (props) => {
             <View style={styles.alertLine}>
                 <Component name="flash">
                     <Flash>
-                        <FlashText>Flash message goes here.</FlashText>
+                        Flash message goes here.
                     </Flash>
                 </Component>
             </View>
             <View style={styles.alertLine}>
                 <Component name="flash-two-lines">
-                    <Flash>
+                    <FlashContainer>
                         <FlashText>This is a longer flash message in it's own paragraph. It ends up looking something like this. If we keep adding more text, it'll eventually wrap to a new line.</FlashText>
                         <FlashText style={{marginTop: 10}}>And this is another paragraph.</FlashText>
-                    </Flash>
+                    </FlashContainer>
                 </Component>
             </View>
             <View style={styles.alertLine}>
                 <Component name="flash-warn">
-                    <Flash isWarn>
-                        <FlashText isWarn>Flash message goes here.</FlashText>
+                    <Flash type="warn">
+                        Flash message goes here.
                     </Flash>
                 </Component>
             </View>
             <View style={styles.alertLine}>
                 <Component name="flash-error">
-                    <Flash isError>
-                        <FlashText isError>Flash message goes here.</FlashText>
+                    <Flash type="error">
+                        Flash message goes here.
                     </Flash>
                 </Component>
             </View>
             <View style={styles.alertLine}>
                 <Component name="flash-success">
-                    <Flash isSuccess>
-                        <FlashText isSuccess>Flash message goes here.</FlashText>
+                    <Flash type="success">
+                        Flash message goes here.
                     </Flash>
                 </Component>
             </View>

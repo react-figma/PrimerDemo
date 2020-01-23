@@ -3,6 +3,7 @@ import {StyleSheet, View} from "react-native";
 import {colors} from "../../tokens/colors";
 import {spacingScale} from "../../tokens/spacingScale";
 import {FlashText} from "./FlashText";
+import {FlashType} from "./FlashType";
 
 const styles = StyleSheet.create({
     container: {
@@ -39,14 +40,14 @@ const successStyles = StyleSheet.create({
     }
 });
 
-export const Flash = (props: {children: React.ReactNode, isWarn?: boolean, isError?: boolean, isSuccess?: boolean}) => {
-    const {children, isWarn, isError, isSuccess} = props;
+export const Flash = (props: {children: React.ReactNode, type?: FlashType}) => {
+    const {children, type} = props;
     return <View style={styles.container}>
         <View style={[
             styles.background,
-            isWarn && warnStyles.background,
-            isError && errorStyles.background,
-            isSuccess && successStyles.background
+            type === "warn" && warnStyles.background,
+            type === "error" && errorStyles.background,
+            type === "success" && successStyles.background
         ]} />
         <View style={styles.content}>
             {children}
@@ -54,10 +55,10 @@ export const Flash = (props: {children: React.ReactNode, isWarn?: boolean, isErr
     </View>
 };
 
-export default (props: {children: React.ReactNode, isWarn?: boolean, isError?: boolean, isSuccess?: boolean}) => {
-    const {children, isWarn, isError, isSuccess} = props;
-    return <Flash isError={isError} isWarn={isWarn} isSuccess={isSuccess}>
-        <FlashText isError={isError} isWarn={isWarn} isSuccess={isSuccess}>
+export default (props: {children: string, type?: FlashType}) => {
+    const {children, type} = props;
+    return <Flash type={type}>
+        <FlashText type={type}>
             {children}
         </FlashText>
     </Flash>

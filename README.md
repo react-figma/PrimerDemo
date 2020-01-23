@@ -28,6 +28,16 @@ A multiplatform React-based design system inspired by GitHub [Primer](https://pr
 </p>
 </details>
 
+#### Native
+
+<details><summary>Demo GIF</summary>
+<p>
+
+![](https://media.giphy.com/media/ib9Nq5zfQzW1oTeWmz/giphy.gif)
+
+</p>
+</details>
+
 ## Running
 
 * Web (Storybook React): `yarn storybook:web`

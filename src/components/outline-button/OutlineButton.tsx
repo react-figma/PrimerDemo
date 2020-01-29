@@ -2,7 +2,7 @@ import * as React from "react";
 import {StyleSheet, View, Text, ViewStyle, TextStyle, ImageStyle} from "react-native";
 import {colors} from "../../tokens/colors";
 import {commonButtonSmallStyle, commonButtonStyle, IButtonCommon} from "../common-button/CommonButton";
-import ToButton from "../../wrappers/button/ToButton";
+import Button from "../../wrappers/button/Button";
 
 const styles = StyleSheet.create({
     ...commonButtonStyle,
@@ -38,6 +38,6 @@ export const OutlineButton = (props: {style?: any} & IOutlineButton) => {
     </View>
 };
 
-export default (props: {onClick?: () => void} & IOutlineButton) => <ToButton onClick={props.onClick}>
+export default (props: {onClick?: () => void} & IOutlineButton) => <Button onClick={props.onClick}>
     {({isHover, isFocus}) => <OutlineButton {...props} isFocus={isFocus} isHover={isHover} />}
-</ToButton>
+</Button>

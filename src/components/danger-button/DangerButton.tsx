@@ -2,7 +2,7 @@ import * as React from "react";
 import {StyleSheet, View, Text, ViewStyle, TextStyle, ImageStyle, Platform} from "react-native";
 import {colors} from "../../tokens/colors";
 import {commonButtonSmallStyle, commonButtonStyle, IButtonCommon} from "../common-button/CommonButton";
-import ToButton from "../../wrappers/button/ToButton";
+import Button from "../../wrappers/button/Button";
 
 const styles = StyleSheet.create({
     ...commonButtonStyle,
@@ -40,6 +40,6 @@ export const DangerButton = (props: IDangerButton) => {
     </View>
 };
 
-export default (props: {onClick?: () => void} & IDangerButton) => <ToButton onClick={props.onClick}>
+export default (props: {onClick?: () => void} & IDangerButton) => <Button onClick={props.onClick}>
     {({isHover, isFocus}) => <DangerButton {...props} isFocus={isFocus} isHover={isHover} />}
-</ToButton>
+</Button>

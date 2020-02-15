@@ -9,50 +9,42 @@ const styles = StyleSheet.create({
     container: {
         alignItems: "center",
         flexDirection: "row",
-        width: "100%"
-    },
-    background: {
-        ...StyleSheet.absoluteFillObject,
+        width: "100%",
         borderRadius: 3,
         backgroundColor: colors.blue100,
         borderWidth: 1,
-        borderColor: "rgba(27,31,35,0.15)"
-    },
-    content: {
-        margin: spacingScale.spacer3
+        borderColor: "rgba(27,31,35,0.15)",
+        padding: spacingScale.spacer3
     }
 });
 
 const warnStyles = StyleSheet.create({
-    background: {
+    container: {
         backgroundColor: colors.yellow100,
     }
 });
 
 const errorStyles = StyleSheet.create({
-    background: {
+    container: {
         backgroundColor: colors.red100,
     }
 });
 
 const successStyles = StyleSheet.create({
-    background: {
+    container: {
         backgroundColor: colors.green100,
     }
 });
 
 export const Flash = (props: {children: React.ReactNode, type?: FlashType}) => {
     const {children, type} = props;
-    return <View style={styles.container}>
-        <View style={[
-            styles.background,
-            type === "warn" && warnStyles.background,
-            type === "error" && errorStyles.background,
-            type === "success" && successStyles.background
-        ]} />
-        <View style={styles.content}>
-            {children}
-        </View>
+    return <View style={[
+        styles.container,
+        type === "warn" && warnStyles.container,
+        type === "error" && errorStyles.container,
+        type === "success" && successStyles.container
+    ]}>
+        {children}
     </View>
 };
 

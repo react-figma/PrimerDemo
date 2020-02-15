@@ -105,8 +105,10 @@ export const Styleguide20 = (props) => {
             <View style={styles.alertLine}>
                 <Component name="flash-two-lines" style={styles.flashComponent}>
                     <FlashContainer>
-                        <FlashText>This is a longer flash message in it's own paragraph. It ends up looking something like this. If we keep adding more text, it'll eventually wrap to a new line.</FlashText>
-                        <FlashText style={{marginTop: 10}}>And this is another paragraph.</FlashText>
+                        <View>
+                            <FlashText>This is a longer flash message in it's own paragraph. It ends up looking something like this. If we keep adding more text, it'll eventually wrap to a new line.</FlashText>
+                            <FlashText style={{marginTop: 10}}>And this is another paragraph.</FlashText>
+                        </View>
                     </FlashContainer>
                 </Component>
             </View>

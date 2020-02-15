@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
     container: {
         alignItems: "center",
         flexDirection: "row",
+        width: "100%"
     },
     background: {
         ...StyleSheet.absoluteFillObject,

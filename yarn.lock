@@ -9725,6 +9725,11 @@ react-fast-compare@^2.0.4:
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-2.0.4.tgz#e84b4d455b0fec113e0402c329352715196f81f9"
   integrity sha512-suNP+J1VU1MWFKcyt7RtjiSWUjvidmQSlqu+eHslq+342xCbGTYmC0mEhPCOHxlW0CywylOC1u2DFAT+bv4dBw==
 
+react-fetch-hook@1.7.2:
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/react-fetch-hook/-/react-fetch-hook-1.7.2.tgz#5aaddea774746f8e19fc3157248575d140d92108"
+  integrity sha512-hgEBSzqIm3ZhTnmP0QrfDdVQJ4Gzc+EXGTxd1yHEC40QE3r1mHF7HKzJBiS4VNNdmFdOZ/bAZ5XmK4apW4JCFA==
+
 react-figma-webpack-config@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/react-figma-webpack-config/-/react-figma-webpack-config-0.0.4.tgz#668a520b984ab48790227e0fc83de9c79bbc7bcb"
@@ -9738,13 +9743,14 @@ react-figma-webpack-config@0.0.4:
     webpack "^4.41.2"
     webpack-merge "^4.2.2"
 
-react-figma@^0.0.45:
-  version "0.0.45"
-  resolved "https://registry.yarnpkg.com/react-figma/-/react-figma-0.0.45.tgz#b3935e4409238b78380118a0f1b0ac00bcefca7c"
-  integrity sha512-/CSRbkMoMchVv/TFvBaJfoYbAwnouVl6qzDqJj/15WyJhU/K7C8ILE/x5iUX8xXst0rajcFiOfx1ZM+8XxqRrw==
+react-figma@0.0.49:
+  version "0.0.49"
+  resolved "https://registry.yarnpkg.com/react-figma/-/react-figma-0.0.49.tgz#65d6369461fe2c48e478a8ac187711f9ffd4ec9b"
+  integrity sha512-P5HWjhPkq88fkyMK9zmeeRzOvvWJX0e3qPlvnUP51c0Pfwfb9MzwUol2Ino3b/tOZx5uAFmM4qa4T1b9KWnPnw==
   dependencies:
     color-parse "^1.3.8"
     nanoid "^2.0.3"
+    react-fetch-hook "1.7.2"
     react-reconciler "^0.23.0"
     rxjs "^6.5.2"
     utility-types "^3.10.0"

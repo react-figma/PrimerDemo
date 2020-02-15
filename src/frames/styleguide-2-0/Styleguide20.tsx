@@ -25,11 +25,15 @@ const styles = StyleSheet.create({
         marginLeft: 20
     },
     alertLine: {
-        marginTop: 40
+        marginTop: 40,
+        width: 1144
     },
     alertText: {
         fontFamily: "SF Pro Display",
         fontSize: 14,
+    },
+    flashComponent: {
+        width: "100%"
     }
 });
 
@@ -92,14 +96,14 @@ export const Styleguide20 = (props) => {
                 </StyleguideSeparatorWrapper>
             </View>
             <View style={styles.alertLine}>
-                <Component name="flash">
+                <Component name="flash" style={styles.flashComponent}>
                     <Flash>
                         Flash message goes here.
                     </Flash>
                 </Component>
             </View>
             <View style={styles.alertLine}>
-                <Component name="flash-two-lines">
+                <Component name="flash-two-lines" style={styles.flashComponent}>
                     <FlashContainer>
                         <FlashText>This is a longer flash message in it's own paragraph. It ends up looking something like this. If we keep adding more text, it'll eventually wrap to a new line.</FlashText>
                         <FlashText style={{marginTop: 10}}>And this is another paragraph.</FlashText>
@@ -107,21 +111,21 @@ export const Styleguide20 = (props) => {
                 </Component>
             </View>
             <View style={styles.alertLine}>
-                <Component name="flash-warn">
+                <Component name="flash-warn" style={styles.flashComponent}>
                     <Flash type="warn">
                         Flash message goes here.
                     </Flash>
                 </Component>
             </View>
             <View style={styles.alertLine}>
-                <Component name="flash-error">
+                <Component name="flash-error" style={styles.flashComponent}>
                     <Flash type="error">
                         Flash message goes here.
                     </Flash>
                 </Component>
             </View>
             <View style={styles.alertLine}>
-                <Component name="flash-success">
+                <Component name="flash-success" style={styles.flashComponent}>
                     <Flash type="success">
                         Flash message goes here.
                     </Flash>

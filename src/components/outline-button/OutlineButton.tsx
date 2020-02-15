@@ -5,14 +5,13 @@ import {commonButtonSmallStyle, commonButtonStyle, IButtonCommon} from "../commo
 import Button from "../../wrappers/button/Button";
 
 const styles = StyleSheet.create({
-    ...commonButtonStyle,
+    container: {
+        ...commonButtonStyle.container,
+        backgroundColor: colors.white
+    },
     text: {
         ...commonButtonStyle.text,
         color: "#0366d6",
-    },
-    background: {
-        ...commonButtonStyle.background,
-        backgroundColor: colors.white
     }
 } as any);
 
@@ -20,7 +19,7 @@ const hoverStyles= StyleSheet.create({
     text: {
         color: "#fff"
     },
-    background: {
+    container: {
         backgroundColor: "#0366d6",
         borderColor: "#0366d6"
     }
@@ -32,8 +31,7 @@ export interface IOutlineButton extends IButtonCommon {
 
 export const OutlineButton = (props: {style?: any} & IOutlineButton) => {
     const {style, children, isHover, isSmall} = props;
-    return <View style={[styles.container, isSmall && commonButtonSmallStyle.container, style]}>
-        <View style={[styles.background, isHover && hoverStyles.background]} />
+    return <View style={[styles.container, isHover && hoverStyles.container, isSmall && commonButtonSmallStyle.container, style]}>
         <Text style={[styles.text, isSmall && commonButtonSmallStyle.text, isHover && hoverStyles.text]}>{children}</Text>
     </View>
 };

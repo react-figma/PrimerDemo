@@ -13,7 +13,7 @@
   "dependencies": {
     "@emotion/styled": "^10.0.27",
     "react": "16.8.6",
-    "react-figma": "0.0.49",
+    "react-figma": "0.0.50",
     "react-native": "0.60.5",
     "react-native-svg": "9.9.9",
     "react-native-web": "^0.12.0-rc.1",

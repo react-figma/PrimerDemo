@@ -5,26 +5,25 @@ import {commonButtonSmallStyle, commonButtonStyle, IButtonCommon} from "../commo
 import Button from "../../wrappers/button/Button";
 
 const styles = StyleSheet.create({
-    ...commonButtonStyle,
+    container: {
+        ...commonButtonStyle.container,
+        backgroundColor: "#fafbfc",
+        ...((Platform.OS !== "ios" && Platform.OS !== "android" ) ? {backgroundImage: `linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%)`} : {}),
+    },
     text: {
         ...commonButtonStyle.text,
         color: colors.red600,
-    },
-    background: {
-        ...commonButtonStyle.background,
-        backgroundColor: "#fafbfc",
-        ...((Platform.OS !== "ios" && Platform.OS !== "android" ) ? {backgroundImage: `linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%)`} : {}),
     }
 } as any);
 
 const hoverStyles= StyleSheet.create({
-    text: {
-        color: "#fff"
-    },
-    background: {
+    container: {
         backgroundColor: "#cb2431",
         ...((Platform.OS !== "ios" && Platform.OS !== "android" ) ? {backgroundImage: "linear-gradient(-180deg, #de4450 0%, #cb2431 90%)"} : {}),
         borderColor: "rgba(27,31,35,0.5)"
+    },
+    text: {
+        color: "#fff"
     }
 });
 
@@ -34,8 +33,7 @@ export interface IDangerButton extends IButtonCommon {
 
 export const DangerButton = (props: IDangerButton) => {
     const {style, children, isHover, isSmall} = props;
-    return <View style={[styles.container, isSmall && commonButtonSmallStyle.container, style]}>
-        <View style={[styles.background, isHover && hoverStyles && hoverStyles.background]} />
+    return <View style={[styles.container, isHover && hoverStyles && hoverStyles.container, isSmall && commonButtonSmallStyle.container, style]}>
         <Text style={[styles.text, isSmall && commonButtonSmallStyle.text, isHover && hoverStyles.text]}>{children}</Text>
     </View>
 };

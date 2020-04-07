@@ -29,7 +29,7 @@ export const commonButtonSmallStyle = StyleSheet.create({
     },
     text: {
         fontSize: typeScale.size6,
-        lineHeight: 1.66,
+        lineHeight: 20,
         marginLeft: 10 + borderSize,
         marginRight: 10 + borderSize
     }

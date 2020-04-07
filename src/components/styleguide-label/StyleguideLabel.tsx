@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
         fontFamily: "SF Pro Display",
         fontSize: 24,
         fontWeight: "bold",
-        lineHeight: 1.08,
+        lineHeight: 26,
         letterSpacing: -0.11
     }
 });

@@ -9743,10 +9743,10 @@ react-figma-webpack-config@0.0.4:
     webpack "^4.41.2"
     webpack-merge "^4.2.2"
 
-react-figma@0.0.50:
-  version "0.0.50"
-  resolved "https://registry.yarnpkg.com/react-figma/-/react-figma-0.0.50.tgz#62be0beb91db8f14eccef1da8d0918f329b61544"
-  integrity sha512-cfkOq2dai8nwPHaT81knbu+AVPoijrN8R2WwOzNbJQdTWTq/goptCL//tv9H+9TL8X1+NoNOgz0XpHS7Wy59Dg==
+react-figma@0.0.58:
+  version "0.0.58"
+  resolved "https://registry.yarnpkg.com/react-figma/-/react-figma-0.0.58.tgz#7d794ed6b9ef94e1a945caddb816431bce1e1753"
+  integrity sha512-6Vz0jF84qHqNuHbQqO2YgT0Wypb6YeYvLOUy8k1NVAFWNaSJKMT6pt084v38iEgmPrVNmDMyG1mTVLGP+By/TA==
   dependencies:
     color-parse "^1.3.8"
     nanoid "^2.0.3"

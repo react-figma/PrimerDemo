@@ -87,52 +87,52 @@ export const Styleguide10 = (props) => {
             <View style={styles.typographyWrapper}>
                 <TypographyContainer
                     label={<Text style={styleguideTypography.label}>H1/left</Text>}
-                    typography={<Text style={[typography.HeadingH1, {width: 460}]}>Sample text</Text>} />
+                    typography={<Text style={[typography.HeadingH1, {color: "#000000", width: 460}]}>Sample text</Text>} />
                 <TypographyContainer
                     style={styles.typographyContainer}
                     label={<Text style={styleguideTypography.label}>H2/left</Text>}
-                    typography={<Text style={[typography.HeadingH2, {width: 460}]}>Sample text</Text>} />
+                    typography={<Text style={[typography.HeadingH2, {color: "#000000", width: 460}]}>Sample text</Text>} />
                 <TypographyContainer
                     style={styles.typographyContainer}
                     label={<Text style={styleguideTypography.label}>H3/left</Text>}
-                    typography={<Text style={typography.HeadingH3}>Sample text</Text>} />
+                    typography={<Text style={[typography.HeadingH3, {color: "#000000"}]}>Sample text</Text>} />
                 <TypographyContainer
                     style={styles.typographyContainer}
                     label={<Text style={styleguideTypography.label}>H4/left</Text>}
-                    typography={<Text style={typography.HeadingH4}>Sample text</Text>} />
+                    typography={<Text style={[typography.HeadingH4, {color: "#000000"}]}>Sample text</Text>} />
                 <TypographyContainer
                     style={styles.typographyContainer}
                     label={<Text style={styleguideTypography.label}>H5/left</Text>}
-                    typography={<Text style={typography.HeadingH5}>Sample text</Text>} />
+                    typography={<Text style={[typography.HeadingH5,{color: "#000000"}]}>Sample text</Text>} />
                 <TypographyContainer
                     style={styles.typographyContainer}
                     label={<Text style={styleguideTypography.label}>H6/left</Text>}
-                    typography={<Text style={typography.HeadingH6}>Sample text</Text>} />
+                    typography={<Text style={[typography.HeadingH6, {color: "#000000"}]}>Sample text</Text>} />
 
                 <TypographyContainer
                     style={styles.typographyContainer}
                     label={<Text style={styleguideTypography.label}>P1/left</Text>}
-                    typography={<Text style={[typography.Paragraph1, {width: 460}]}>Sample text</Text>} />
+                    typography={<Text style={[typography.Paragraph1, {color: "#000000", width: 460}]}>Sample text</Text>} />
                 <TypographyContainer
                     style={styles.typographyContainer}
                     label={<Text style={styleguideTypography.label}>P2/left</Text>}
-                    typography={<Text style={[typography.Paragraph2, {width: 460}]}>Sample text</Text>} />
+                    typography={<Text style={[typography.Paragraph2, {color: "#000000", width: 460}]}>Sample text</Text>} />
                 <TypographyContainer
                     style={styles.typographyContainer}
                     label={<Text style={styleguideTypography.label}>P3/left</Text>}
-                    typography={<Text style={typography.Paragraph3}>Sample text</Text>} />
+                    typography={<Text style={[typography.Paragraph3, {color: "#000000"}]}>Sample text</Text>} />
                 <TypographyContainer
                     style={styles.typographyContainer}
                     label={<Text style={styleguideTypography.label}>P4/left</Text>}
-                    typography={<Text style={typography.Paragraph4}>Sample text</Text>} />
+                    typography={<Text style={[typography.Paragraph4, {color: "#000000"}]}>Sample text</Text>} />
                 <TypographyContainer
                     style={styles.typographyContainer}
                     label={<Text style={styleguideTypography.label}>P5/left</Text>}
-                    typography={<Text style={typography.Paragraph5}>Sample text</Text>} />
+                    typography={<Text style={[typography.Paragraph5, {color: "#000000"}]}>Sample text</Text>} />
                 <TypographyContainer
                     style={styles.typographyContainer}
                     label={<Text style={styleguideTypography.label}>P6/left</Text>}
-                    typography={<Text style={typography.Paragraph6}>Sample text</Text>} />
+                    typography={<Text style={[typography.Paragraph6, {color: "#000000"}]}>Sample text</Text>} />
             </View>
         </View>
     </Frame>

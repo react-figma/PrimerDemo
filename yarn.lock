@@ -5394,6 +5394,11 @@ figgy-pudding@^3.5.1:
   resolved "https://registry.yarnpkg.com/figgy-pudding/-/figgy-pudding-3.5.1.tgz#862470112901c727a0e495a80744bd5baa1d6790"
   integrity sha512-vNKxJHTEKNThjfrdJwHc7brvM6eVevuO5nTj6ez8ZQ1qbXTvGthucRF7S4vf2cr71QVnT70V34v0S1DyQsti0w==
 
+figma-jsonrpc@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/figma-jsonrpc/-/figma-jsonrpc-0.4.0.tgz#6934b812a78343404d98c7c4b5ea035b3a342d25"
+  integrity sha512-nEwQP+h1w1fnDgfZh0VnFeN3nWjMBJa1sgL/5vtm770ExUqBkn8MY7QiY+6rUSEipoMKXq/hZbsTqx3xk9w+qg==
+
 figures@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/figures/-/figures-2.0.0.tgz#3ab1a2d2a62c8bfb431a0c94cb797a2fce27c962"
@@ -9730,10 +9735,10 @@ react-fetch-hook@1.7.2:
   resolved "https://registry.yarnpkg.com/react-fetch-hook/-/react-fetch-hook-1.7.2.tgz#5aaddea774746f8e19fc3157248575d140d92108"
   integrity sha512-hgEBSzqIm3ZhTnmP0QrfDdVQJ4Gzc+EXGTxd1yHEC40QE3r1mHF7HKzJBiS4VNNdmFdOZ/bAZ5XmK4apW4JCFA==
 
-react-figma-webpack-config@0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/react-figma-webpack-config/-/react-figma-webpack-config-0.0.4.tgz#668a520b984ab48790227e0fc83de9c79bbc7bcb"
-  integrity sha512-BA4J4/WJGxPHYMhVvPfmabLKgKW9XUAywIIo5a0Roi46Xt3lue/vshw4amgalGBuHjsLqWOspF/Df4bMRcHvGA==
+react-figma-webpack-config@0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/react-figma-webpack-config/-/react-figma-webpack-config-0.0.6.tgz#c5217bdd8dd09489c63f61166d4e02c655bf115f"
+  integrity sha512-uC9g/HQM57oQB9S7t/LtODu+BxfKb97lnd9N+Aug+Ww3sr2q8F7ituQmHzEzbah16DXiLeUbEPCNBL3SbIdvrQ==
   dependencies:
     html-webpack-inline-source-plugin "^0.0.10"
     html-webpack-plugin "^3.2.0"
@@ -9743,17 +9748,19 @@ react-figma-webpack-config@0.0.4:
     webpack "^4.41.2"
     webpack-merge "^4.2.2"
 
-react-figma@0.0.58:
-  version "0.0.58"
-  resolved "https://registry.yarnpkg.com/react-figma/-/react-figma-0.0.58.tgz#7d794ed6b9ef94e1a945caddb816431bce1e1753"
-  integrity sha512-6Vz0jF84qHqNuHbQqO2YgT0Wypb6YeYvLOUy8k1NVAFWNaSJKMT6pt084v38iEgmPrVNmDMyG1mTVLGP+By/TA==
+react-figma@0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/react-figma/-/react-figma-0.1.2.tgz#a989727c687ea5d4d953cc1358298fdb86cc17da"
+  integrity sha512-uEROGxEYDILcXy8L1MTxBJei92FlSGpjpZpDDqtc5yswTtnML1XLr5ZXvZVa3N8Qztr70wk26KC+ig5VW4dl2A==
   dependencies:
     color-parse "^1.3.8"
+    figma-jsonrpc "^0.4.0"
     nanoid "^2.0.3"
     react-fetch-hook "1.7.2"
     react-reconciler "^0.23.0"
     rxjs "^6.5.2"
     utility-types "^3.10.0"
+    yoga-layout-prebuilt "1.9.3"
 
 react-focus-lock@^2.1.0:
   version "2.2.1"
@@ -12482,7 +12489,7 @@ yargs@^9.0.0:
     y18n "^3.2.1"
     yargs-parser "^7.0.0"
 
-yoga-layout-prebuilt@^1.9.3:
+yoga-layout-prebuilt@1.9.3, yoga-layout-prebuilt@^1.9.3:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/yoga-layout-prebuilt/-/yoga-layout-prebuilt-1.9.3.tgz#11e3be29096afe3c284e5d963cc2d628148c1372"
   integrity sha512-9SNQpwuEh2NucU83i2KMZnONVudZ86YNcFk9tq74YaqrQfgJWO3yB9uzH1tAg8iqh5c9F5j0wuyJ2z72wcum2w==

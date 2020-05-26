@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     }
 });
 
-export const App = () => {
+const App = () => {
     return (
         <Page isCurrent name="Styleguide" style={styles.page}>
             <Styleguide10 />
@@ -22,3 +22,5 @@ export const App = () => {
         </Page>
     );
 };
+
+export { App };

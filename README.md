@@ -18,7 +18,8 @@ A multiplatform React-based design system inspired by GitHub [Primer](https://pr
 
 #### Figma
 
-[Demo Figma document](https://www.figma.com/file/WCoBWoLG9UQSb9bC9ZLhRl/Untitled?node-id=0%3A1)
+Dulplicate [Community File](https://www.figma.com/community/file/905801857371996928)
+[Demo Figma document](https://www.figma.com/file/WCoBWoLG9UQSb9bC9ZLhRl/Untitled)
 
 <details><summary>Demo GIF</summary>
 <p>

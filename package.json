@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.5.0",
+    "@babel/helper-compilation-targets": "^7.12.5",
     "@babel/runtime": "^7.5.0",
     "@react-native-community/eslint-config": "^0.0.3",
     "@storybook/addon-actions": "^5.3.3",

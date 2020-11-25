@@ -32,15 +32,30 @@ const focusStyles = StyleSheet.create({
 });
 
 export interface IDefaultButton extends IButtonCommon {
-    style?: ViewStyle | TextStyle | ImageStyle
+    style?: ViewStyle | TextStyle | ImageStyle,
+    icon?: any
 }
 
 export const DefaultButton = (props: IDefaultButton) => {
-    const {style, children, isHover, isFocus, isSmall} = props;
-    return <View style={[styles.container, isHover && hoverStyles.container, isFocus && focusStyles.container, isSmall && commonButtonSmallStyle.container, style]}>
-        <Text style={[styles.text, isSmall && commonButtonSmallStyle.text]}>{children}</Text>
-    </View>
+    const { style, children, isHover, isFocus, isSmall, icon } = props;
+    return (
+        <View
+            style={[
+                styles.container,
+                isHover && hoverStyles.container,
+                isFocus && focusStyles.container,
+                isSmall && commonButtonSmallStyle.container,
+                style,
+            ]}
+        >
+            {icon}
+            <Text style={[styles.text, isSmall && commonButtonSmallStyle.text]}>
+                {children}
+            </Text>
+        </View>
+    );
 };
+
 
 export default (props: {onClick?: () => void} & IDefaultButton) => <Button onClick={props.onClick}>
     {({isHover, isFocus}) => <DefaultButton {...props} isFocus={isFocus} isHover={isHover} />}

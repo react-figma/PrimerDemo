@@ -1,6 +1,6 @@
 import * as React from "react";
 import icon from "./icons/markdown.svg"
-import {Icon} from "./Icon";
+import {Icon} from "../../wrappers/icon/Icon";
 
 
 export const Markdown = (props) => {

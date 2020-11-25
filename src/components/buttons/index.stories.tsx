@@ -7,6 +7,7 @@ import {defaultBackground} from "../storybook-decorators/DefaultBackground";
 import { action } from '@storybook/addon-actions';
 import DefaultButton from "../default-button/DefaultButton";
 import OutlineButton from "../outline-button/OutlineButton";
+import {RepoForked} from "../icons/RepoForked";
 
 
 storiesOf('Button', module)
@@ -28,4 +29,6 @@ storiesOf('Button', module)
                                                  isSmall={boolean("isSmall", false)}>
         {text("children", "Danger Button")}
     </OutlineButton>
-);
+    ).add('Fork Button', () => <DefaultButton icon={<RepoForked style={{marginRight: 6}} />}>
+        Fork
+    </DefaultButton>);

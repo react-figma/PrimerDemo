@@ -5,12 +5,15 @@ const borderSize = 1;
 
 export const commonButtonStyle = {
     container: {
+        flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
         height: 32,
         borderRadius: 3,
         borderWidth: 1,
         borderColor: "rgba(27,31,35,0.2)",
+        paddingLeft: 12 + borderSize,
+        paddingRight: 12 + borderSize
     },
     text: {
         fontFamily: "SF Pro Text",
@@ -18,8 +21,6 @@ export const commonButtonStyle = {
         fontSize: typeScale.size5,
         textAlign: "center",
         zIndex: 1,
-        marginLeft: 12 + borderSize,
-        marginRight: 12 + borderSize
     }
 };
 
@@ -40,5 +41,5 @@ export interface IButtonCommon {
     isDisabled?: boolean;
     isHover?: boolean;
     isFocus?: boolean;
-    isSmall?: boolean
+    isSmall?: boolean;
 }
